@@ -1,0 +1,92 @@
+.aboutContainer{
+  max-width: 1920px;
+
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 405px;
+  position: relative;
+  background: url("../../img/about/back_green.jpg") no-repeat center;
+  background-size: 1920px 405px;
+
+  .aboutContainer-title {
+    position: absolute;
+    top: 110px;
+    left: 39%;
+    width: 250px;
+  }
+
+  .aboutContainer-text {
+    position: absolute;
+    top: 170px;
+    left: 39%;
+    width: 355px;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 2;
+    letter-spacing: 0.5px;
+  }
+
+  .aboutContainer-btn {
+    position: absolute;
+    top: 95px;
+    left: 68%;
+    width: 245px;
+  }
+
+  .about-sp {
+    display: none;
+  }
+  .about-pc {
+    display: block;
+  }
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+  .aboutContainer {
+    position: relative;
+    max-width: 100%;
+    min-width: auto;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 7%;
+    background: url("../../img/about/bg-karin_sp.png"),url('../../img/about/back_green_sp.jpg');
+    background-repeat: no-repeat,repeat;
+    background-size: 100% auto, cover;
+    background-position: center 0vw, top left;
+
+    .aboutContainer-title {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 55%;
+      padding-top: 12%;
+    }
+
+    .aboutContainer-text {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+      width: 84%;
+      padding-top: 60%;
+      font-size: 3.75vw;
+      padding-bottom: 8%;
+    }
+
+    .about-pc {
+      display: none;
+    }
+
+    .about-sp {
+      display: block;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

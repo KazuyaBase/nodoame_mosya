@@ -1,0 +1,31 @@
+.footerContainer {
+  padding: 43px 0 58px;
+  text-align: center;
+
+  .footerContainer-link {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-right: 20px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .footerContainer-copy {
+    padding-top: 18px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+  .footerContainer {
+    padding: 6% 0 20%;
+  }
+}
